@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f8f5;
+  color: #17211d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  height: 72px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e5ebe5;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav h2 {
+  color: #17211d;
+}
+
+.links {
+  display: flex;
+  gap: 28px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #526058;
+  font-size: 14px;
+}
+
+.emergency {
+  background: #17211d;
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.hero {
+  min-height: 600px;
+  padding: 90px 10%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+  align-items: center;
+  background: linear-gradient(135deg, #edf5ef, #faf8f2);
+}
+
+.eyebrow {
+  color: #63836e;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 68px;
+  line-height: 1.05;
+  margin-bottom: 25px;
+}
+
+.hero h1 i {
+  color: #638c70;
+}
+
+.intro {
+  max-width: 600px;
+  color: #657069;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  background: #1d2b24;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(30, 50, 35, 0.12);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e7f1e8;
+  color: #638c70;
+  font-size: 30px;
+}
+
+.hero-card p {
+  color: #738078;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.hero-card h2 {
+  font-size: 27px;
+  line-height: 1.25;
+}
+
+.hero-card hr {
+  border: none;
+  border-top: 1px solid #e5ebe5;
+  margin: 30px 0 20px;
+}
+
+.hero-card strong,
+.hero-card small {
+  display: block;
+}
+
+.hero-card strong {
+  font-size: 22px;
+}
+
+.hero-card small {
+  color: #7a857e;
+}
+
+.section {
+  padding: 90px 10%;
+}
+
+.section h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cards article {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #e1e8e1;
+}
+
+.cards span {
+  color: #78917f;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.cards h3 {
+  margin: 30px 0 10px;
+  font-size: 20px;
+}
+
+.cards p,
+.services p {
+  color: #6c7770;
+  line-height: 1.7;
+}
+
+.band {
+  padding: 80px 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  background: #e8f0e9;
+}
+
+.band h2 {
+  font-size: 42px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.checks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  font-weight: bold;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+}
+
+.services h2 {
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d8e0d9;
+  border-radius: 8px;
+  font: inherit;
+  background: white;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  background: #1d2b24;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.success {
+  color: #3d8051 !important;
+}
+
+footer {
+  padding: 30px 10%;
+  background: #17211d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer span {
+  color: #aab5ad;
+}
+
+@media (max-width: 800px) {
+  .links {
+    display: none;
+  }
+
+  .hero,
+  .band,
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 60px 7%;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .section {
+    padding: 60px 7%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 25px 7%;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
